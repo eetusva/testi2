@@ -15,6 +15,9 @@ body {
   gap: 20px;
   justify-content: center;
   height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .middle {
@@ -42,9 +45,13 @@ button {
 }
 
 .credits {
-  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
   color: #e7edf0;
   font-size: 14px;
+  padding: 10px;
 }
 
 /* Modal styles */
