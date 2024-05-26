@@ -135,7 +135,7 @@ button {
 /* Floating logos */
 .floating-logos {
   position: fixed;
-  top: 0; /* Säädä top: 0 */
+  top: 0; /* Muutettu bottom: 0 tilalle */
   left: 0;
   width: 100%;
   height: 100%;
@@ -144,25 +144,26 @@ button {
 
 .floating-logo {
   position: absolute;
-  top: -50px; /* Alkukohta yläreunassa */
+  top: 0; /* Muutettu bottom: 0 tilalle */
   width: 50px; /* Muokkaa kokoa tarpeen mukaan */
   height: auto;
-  animation: floatDown 5s linear infinite; /* Animaation nimi muutettu floatDown */
+  animation: floatDown 5s linear infinite; /* Muutettu floatUp tilalle floatDown */
 }
 
 @keyframes floatDown {
   0% {
-    transform: translateY(-100vh) rotate(0deg); /* Alkuasento ylimpänä, translateY(-100vh) */
+    transform: translateY(-100vh) rotate(0deg); /* Muutettu translateY(100vh) tilalle translateY(-100vh) */
     opacity: 0;
   }
   25% {
     opacity: 1;
   }
   100% {
-    transform: translateY(100vh) rotate(360deg); /* Loppuasento alimmassa, translateY(100vh) */
+    transform: translateY(100vh) rotate(360deg); /* Muutettu translateY(-100vh) tilalle translateY(100vh) */
     opacity: 0;
   }
 }
+
 
 
 
