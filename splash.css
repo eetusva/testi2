@@ -16,6 +16,7 @@ body {
   justify-content: center;
   height: 100vh;
 }
+
 .middle {
   display: flex;
   align-items: center;
@@ -23,6 +24,7 @@ body {
   flex-direction: row;
   gap: 25px;
 }
+
 h1 {
   color: lime;
   padding: 30px;
@@ -37,4 +39,10 @@ button {
   background-color: transparent;
   color: #e7edf0;
   font-family: "Share Tech Mono", monospace;
+}
+
+.credits {
+  margin-top: 20px;
+  color: #e7edf0;
+  font-size: 14px;
 }
