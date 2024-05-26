@@ -17,6 +17,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  overflow: hidden; /* Hide overflowing logos */
 }
 
 .logo-container {
@@ -99,4 +100,36 @@ button {
   color: #e7edf0;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Floating logos */
+.floating-logos {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.floating-logo {
+  position: absolute;
+  bottom: 0;
+  width: 50px; /* Adjust the size as needed */
+  height: auto;
+  animation: floatUp 5s linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
 }
