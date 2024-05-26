@@ -19,6 +19,15 @@ body {
   padding: 0;
 }
 
+.logo-container {
+  margin-bottom: 20px; /* Spacing between logo and heading */
+}
+
+.logo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+}
+
 .middle {
   display: flex;
   align-items: center;
