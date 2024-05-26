@@ -10,7 +10,7 @@ function closeInstructions() {
 function createFloatingLogo() {
   const logoContainer = document.querySelector('.floating-logos');
   const logo = document.createElement('img');
-  logo.src = 'kuvat/logo.png';
+  logo.src = 'kuvat/matologo.png';
   logo.className = 'floating-logo';
   
   // Randomize the starting position and animation duration
