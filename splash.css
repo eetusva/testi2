@@ -112,25 +112,36 @@ button {
   pointer-events: none;
 }
 
-.floating-logo {
-  position: absolute;
-  bottom: 0;
-  width: 50px; /* Adjust the size as needed */
-  height: auto;
-  animation: floatUp 5s linear infinite; /* Change 5s to your desired duration */
+/* Floating logos */
+.floating-logos {
+  position: fixed;
+  top: 0; /* Muutettu bottom: 0 tilalle */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
-@keyframes floatUp {
+.floating-logo {
+  position: absolute;
+  top: 0; /* Muutettu bottom: 0 tilalle */
+  width: 50px; /* Muokkaa kokoa tarpeen mukaan */
+  height: auto;
+  animation: floatDown 5s linear infinite; /* Muutettu floatUp tilalle floatDown */
+}
+
+@keyframes floatDown {
   0% {
-    transform: translateY(100vh) rotate(0deg);
+    transform: translateY(-100vh) rotate(0deg); /* Muutettu translateY(100vh) tilalle translateY(-100vh) */
     opacity: 0;
   }
   25% {
     opacity: 1;
   }
   100% {
-    transform: translateY(-100vh) rotate(360deg);
+    transform: translateY(100vh) rotate(360deg); /* Muutettu translateY(-100vh) tilalle translateY(100vh) */
     opacity: 0;
   }
 }
+
 
