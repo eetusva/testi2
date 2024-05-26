@@ -15,7 +15,7 @@ function createFloatingLogo() {
   
   // Randomize the starting position and animation duration
   logo.style.left = Math.random() * 100 + 'vw';
-  logo.style.animationDuration = Math.random() * 3 + 3 + 's';
+  logo.style.animationDuration = Math.random() * 3 + 3 + 's'; // Adjust duration here
   
   // Add the logo to the container
   logoContainer.appendChild(logo);
@@ -27,9 +27,10 @@ function createFloatingLogo() {
 }
 
 // Create floating logos at intervals
-setInterval(createFloatingLogo, 500); // Adjust the interval as needed
+setInterval(createFloatingLogo, 500); // Adjust the interval here (500ms)
 
 // Initial batch of logos
 for (let i = 0; i < 10; i++) {
   createFloatingLogo();
 }
+
